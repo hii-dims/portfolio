@@ -1,5 +1,7 @@
 # Hi there, I'm Smriti Ranjan 👋
 
+🔗 **Live Portfolio Website:** [https://hii-dims.github.io/portfolio/](https://hii-dims.github.io/portfolio/)
+
 I'm a final-year Computer Science and Engineering student at **Bengal College of Engineering and Technology (BCET)**, graduating in 2027[cite: 1]. I'm a backend developer specializing in **Java, Spring Boot, REST APIs, and modern AI/RAG systems**[cite: 1]. 
 
 I love building production-grade software, writing performant backend architectures, and solving complex algorithmic challenges[cite: 1].
@@ -30,11 +32,3 @@ I love building production-grade software, writing performant backend architectu
 * **Databases & Storage:** PostgreSQL, MySQL, H2 Database, Browser LocalStorage[cite: 1]
 * **Core Fundamentals:** Data Structures & Algorithms, Object-Oriented Programming (OOP), System Design, DBMS, Operating Systems[cite: 1]
 * **Tools & DevOps:** Git, GitHub, Docker, Docker Compose, VS Code, Swagger/OpenAPI[cite: 1]
-
----
-
-## 📫 Connect With Me
-* **Email:** smriti.ranjan164@gmail.com[cite: 1]
-* **Phone:** 9507983257[cite: 1]
-* **Location:** Patna, Bihar[cite: 1]
-* **GitHub:** [hii-dims](https://github.com/hii-dims)[cite: 1]
