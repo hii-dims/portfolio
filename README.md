@@ -2,9 +2,7 @@
 
 🔗 **Live Portfolio Website:** [https://hii-dims.github.io/portfolio/](https://hii-dims.github.io/portfolio/)
 
-I'm a final-year Computer Science and Engineering student at **Bengal College of Engineering and Technology (BCET)**, graduating in 2027[cite: 1]. I'm a backend developer specializing in **Java, Spring Boot, REST APIs, and modern AI/RAG systems**[cite: 1]. 
-
-I love building production-grade software, writing performant backend architectures, and solving complex algorithmic challenges[cite: 1].
+I am a final-year Computer Science and Engineering student at **Bengal College of Engineering and Technology (BCET)**, graduating in 2027[cite: 1]. I specialize in backend development, high-throughput REST APIs, and modern AI/RAG vector search architectures[cite: 1].
 
 ---
 

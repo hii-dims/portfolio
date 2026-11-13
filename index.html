@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smriti Ranjan | Backend & AI Systems Engineer</title>
-    <!-- Google Fonts: Plus Jakarta Sans & Fira Code -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -19,10 +19,11 @@
                         mono: ['"Fira Code"', 'monospace'],
                     },
                     colors: {
-                        darkbg: '#060b13',
-                        cardbg: '#0f172a',
-                        accent: '#10b981', // Vibrant Emerald Accent
-                        secondary: '#38bdf8' // Cyan Accent
+                        darkbg: '#050811',
+                        cardbg: '#0d1322',
+                        accent: '#38bdf8',
+                        secondary: '#818cf8',
+                        emeraldaccent: '#34d399'
                     }
                 }
             }
@@ -30,22 +31,22 @@
     </script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Vanilla-Tilt.js for 3D Cards -->
+    <!-- Vanilla-Tilt for 3D Tilt Effect -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <style>
         .bg-grid {
-            background-size: 40px 40px;
+            background-size: 50px 50px;
             background-image: 
-                linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+                linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
         }
         #spotlight {
-            background: radial-gradient(600px circle at var(--x, 50%) var(--y, 50%), rgba(16, 185, 129, 0.08), transparent 80%);
+            background: radial-gradient(700px circle at var(--x, 50%) var(--y, 50%), rgba(56, 189, 248, 0.08), transparent 80%);
         }
         .reveal {
             opacity: 0;
-            transform: translateY(28px);
-            transition: all 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .reveal.active {
             opacity: 1;
@@ -63,23 +64,23 @@
             50% { transform: translateY(-8px); }
         }
         .animate-float {
-            animation: float 5s ease-in-out infinite;
+            animation: float 6s ease-in-out infinite;
         }
     </style>
 </head>
 <body class="bg-darkbg bg-grid text-slate-100 font-sans antialiased selection:bg-accent selection:text-darkbg overflow-x-hidden relative">
 
-    <!-- Mouse Spotlight -->
+    <!-- Interactive Mouse Spotlight -->
     <div id="spotlight" class="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300"></div>
 
-    <!-- Scroll Progress -->
-    <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-accent to-secondary z-50 transition-all duration-150" style="width: 0%;"></div>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-accent via-secondary to-emeraldaccent z-50 transition-all duration-150" style="width: 0%;"></div>
 
     <!-- Ambient Glows -->
-    <div class="fixed top-20 -left-32 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="fixed bottom-10 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="fixed top-10 -left-32 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="fixed bottom-10 -right-32 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav class="fixed top-0 left-0 w-full bg-darkbg/80 backdrop-blur-xl border-b border-slate-800/80 z-40">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="#" class="text-xl font-extrabold tracking-wider flex items-center gap-1 group">
@@ -93,8 +94,8 @@
                 <a href="#projects" class="hover:text-accent transition">Projects</a>
                 <a href="#education" class="hover:text-accent transition">Education</a>
             </div>
-            <a href="#contact" class="bg-gradient-to-r from-accent to-emerald-600 text-darkbg px-4 py-2 rounded-lg text-sm font-bold hover:opacity-90 transition shadow-lg shadow-emerald-500/20">
-                Hire Me
+            <a href="#contact" class="bg-gradient-to-r from-accent to-secondary text-darkbg px-4 py-2 rounded-lg text-sm font-bold hover:opacity-90 transition shadow-lg shadow-sky-500/20">
+                Get in Touch
             </a>
         </div>
     </nav>
@@ -103,13 +104,13 @@
     <section class="min-h-screen flex items-center justify-center pt-20 px-6 relative">
         <div class="max-w-4xl text-center z-10">
             <div class="inline-flex items-center gap-2 bg-slate-900/90 border border-slate-700/80 px-4 py-1.5 rounded-full mb-8 shadow-lg animate-float">
-                <span class="w-2.5 h-2.5 rounded-full bg-accent animate-ping"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-accent -ml-4.5"></span>
-                <span class="text-xs font-mono text-slate-300 tracking-wide">Open to Software Engineering Internships (2027 Grad)[cite: 1]</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emeraldaccent animate-ping"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emeraldaccent -ml-4.5"></span>
+                <span class="text-xs font-mono text-slate-300 tracking-wide">Open for Software Engineering & Backend Internships (2027 Grad)[cite: 1]</span>
             </div>
 
             <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent via-emerald-300 to-secondary">Smriti Ranjan</span>[cite: 1]
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent via-sky-200 to-secondary">Smriti Ranjan</span>[cite: 1]
             </h1>
 
             <div class="h-10 mb-6 flex items-center justify-center">
@@ -119,21 +120,22 @@
             </div>
 
             <p class="text-base md:text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                Final-year Computer Science & Engineering student at Bengal College of Engineering and Technology (BCET)[cite: 1], building high-throughput REST APIs, distributed backend architectures, and context-grounded RAG engines in Java & Spring Boot[cite: 1].
+                Final-year Computer Science & Engineering student at Bengal College of Engineering & Technology (BCET)[cite: 1]. Crafting high-performance backend systems, secure REST APIs, and intelligent RAG engines with Java & Spring Boot[cite: 1].
             </p>
 
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="#projects" class="bg-accent text-darkbg font-bold px-7 py-3.5 rounded-xl hover:bg-emerald-400 transition transform hover:-translate-y-0.5 shadow-lg shadow-emerald-500/25 flex items-center gap-2">
-                    <i class="fas fa-rocket"></i> View My Work
+                <a href="#projects" class="bg-accent text-darkbg font-bold px-7 py-3.5 rounded-xl hover:bg-sky-400 transition transform hover:-translate-y-0.5 shadow-lg shadow-sky-500/25 flex items-center gap-2">
+                    <i class="fas fa-rocket"></i> Explore Projects
                 </a>
                 <a href="https://github.com/hii-dims" target="_blank" class="bg-slate-900/90 border border-slate-700 text-slate-200 font-semibold px-7 py-3.5 rounded-xl hover:border-accent hover:text-accent transition transform hover:-translate-y-0.5 flex items-center gap-2">
-                    <i class="fab fa-github text-lg"></i> GitHub[cite: 1]
+                    <i class="fab fa-github text-lg"></i> GitHub Profile[cite: 1]
                 </a>
                 <button onclick="copyEmail()" class="bg-slate-900/90 border border-slate-700 text-slate-200 font-semibold px-7 py-3.5 rounded-xl hover:border-secondary hover:text-secondary transition transform hover:-translate-y-0.5 flex items-center gap-2 cursor-pointer">
                     <i class="far fa-copy"></i> Copy Email
                 </button>
             </div>
 
+            <!-- Tech Stack Bar -->
             <div class="mt-16 pt-8 border-t border-slate-800/60 flex flex-wrap justify-center gap-6 text-slate-500 text-xs font-mono uppercase tracking-widest">
                 <span class="hover:text-accent transition"><i class="fab fa-java mr-1"></i> Java[cite: 1]</span>
                 <span>•</span>
@@ -166,22 +168,22 @@
                     <div class="w-12"></div>
                 </div>
                 <div class="p-6 md:p-8 font-mono text-sm md:text-base space-y-4 leading-relaxed">
-                    <p class="text-slate-400"><span class="text-accent">smriti@dev</span>:<span class="text-secondary">~</span>$ whoami</p>
+                    <p class="text-slate-400"><span class="text-emeraldaccent">smriti@dev</span>:<span class="text-accent">~</span>$ whoami</p>
                     <p class="text-slate-200 pl-4">
                         Final-year B.Tech CSE student at <span class="text-accent font-semibold">Bengal College of Engineering & Technology (BCET)</span> (Class of 2027) based in Patna, Bihar[cite: 1].
                     </p>
-                    <p class="text-slate-400"><span class="text-accent">smriti@dev</span>:<span class="text-secondary">~</span>$ cat mission.txt</p>
+                    <p class="text-slate-400"><span class="text-emeraldaccent">smriti@dev</span>:<span class="text-accent">~</span>$ cat mission.txt</p>
                     <p class="text-slate-300 pl-4">
-                        I specialize in designing resilient backend systems with <span class="text-emerald-300">Java & Spring Boot</span>, optimizing relational databases, and building Retrieval-Augmented Generation (RAG) engines that turn raw documents into intelligent answers[cite: 1].
+                        I specialize in designing resilient backend systems with <span class="text-sky-300">Java & Spring Boot</span>, optimizing relational database schemas, and building Retrieval-Augmented Generation (RAG) engines that turn unstructured documents into intelligent query answers[cite: 1].
                     </p>
-                    <p class="text-slate-400"><span class="text-accent">smriti@dev</span>:<span class="text-secondary">~</span>$ echo $CORE_STRENGTHS</p>
-                    <p class="text-amber-300 pl-4">["Data Structures & Algorithms", "RESTful API Design", "Spring Security & JWT", "Vector Search"][cite: 1]</p>
+                    <p class="text-slate-400"><span class="text-emeraldaccent">smriti@dev</span>:<span class="text-accent">~</span>$ echo $CORE_STRENGTHS</p>
+                    <p class="text-amber-300 pl-4">["Data Structures & Algorithms", "RESTful API Architecture", "Spring Security & JWT", "Vector Embeddings & Search"][cite: 1]</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Technical Skills Section -->
     <section id="skills" class="py-24 px-6 reveal">
         <div class="max-w-5xl mx-auto">
             <h2 class="text-2xl md:text-3xl font-bold mb-12 flex items-center gap-3">
@@ -189,7 +191,7 @@
             </h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div data-tilt data-tilt-max="6" data-tilt-speed="400" class="bg-cardbg/70 backdrop-blur-md p-6 rounded-2xl border border-slate-800 hover:border-accent/60 transition group shadow-lg">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-accent text-xl mb-4 group-hover:scale-110 transition">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-accent text-xl mb-4 group-hover:scale-110 transition">
                         <i class="fas fa-code"></i>
                     </div>
                     <h3 class="text-white font-bold text-lg mb-3">Languages & Core</h3>
@@ -197,7 +199,7 @@
                 </div>
 
                 <div data-tilt data-tilt-max="6" data-tilt-speed="400" class="bg-cardbg/70 backdrop-blur-md p-6 rounded-2xl border border-slate-800 hover:border-accent/60 transition group shadow-lg">
-                    <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-secondary text-xl mb-4 group-hover:scale-110 transition">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-secondary text-xl mb-4 group-hover:scale-110 transition">
                         <i class="fas fa-server"></i>
                     </div>
                     <h3 class="text-white font-bold text-lg mb-3">Backend & APIs</h3>
@@ -205,7 +207,7 @@
                 </div>
 
                 <div data-tilt data-tilt-max="6" data-tilt-speed="400" class="bg-cardbg/70 backdrop-blur-md p-6 rounded-2xl border border-slate-800 hover:border-accent/60 transition group shadow-lg">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-accent text-xl mb-4 group-hover:scale-110 transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emeraldaccent text-xl mb-4 group-hover:scale-110 transition">
                         <i class="fas fa-brain"></i>
                     </div>
                     <h3 class="text-white font-bold text-lg mb-3">AI & Vector Search</h3>
@@ -229,7 +231,7 @@
                 </div>
 
                 <div data-tilt data-tilt-max="6" data-tilt-speed="400" class="bg-cardbg/70 backdrop-blur-md p-6 rounded-2xl border border-slate-800 hover:border-accent/60 transition group shadow-lg">
-                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-secondary text-xl mb-4 group-hover:scale-110 transition">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-accent text-xl mb-4 group-hover:scale-110 transition">
                         <i class="fas fa-tools"></i>
                     </div>
                     <h3 class="text-white font-bold text-lg mb-3">Tools & DevOps</h3>
@@ -239,7 +241,7 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Featured Projects Section -->
     <section id="projects" class="py-24 px-6 reveal">
         <div class="max-w-5xl mx-auto">
             <div class="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-4">
@@ -270,14 +272,14 @@
                         </a>
                     </div>
                     <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
-                        Built an intelligent campus query engine using Java & Spring Boot that ingests university PDFs using Apache PDFBox for automated request resolution[cite: 1]. Integrated PostgreSQL with pgvector and Ollama (Qwen 3) to execute semantic similarity searches over document chunks and generate context-grounded answers[cite: 1]. Secured RESTful endpoints with Spring Security, JWT authentication, role-based authorization, and Swagger/OpenAPI documentation[cite: 1].
+                        Intelligent campus query engine built with Java & Spring Boot that ingests university PDFs using Apache PDFBox for automated request resolution[cite: 1]. Integrates PostgreSQL with pgvector and Ollama (Qwen 3) to execute semantic similarity searches over document chunks and generate context-grounded answers[cite: 1]. Secured RESTful endpoints with Spring Security, JWT authentication, role-based authorization, and Swagger/OpenAPI documentation[cite: 1].
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-emerald-950/80 text-accent text-xs font-mono px-3 py-1 rounded-md border border-emerald-800/40">Java[cite: 1]</span>
-                        <span class="bg-emerald-950/80 text-accent text-xs font-mono px-3 py-1 rounded-md border border-emerald-800/40">Spring Boot[cite: 1]</span>
-                        <span class="bg-emerald-950/80 text-accent text-xs font-mono px-3 py-1 rounded-md border border-emerald-800/40">PostgreSQL + pgvector[cite: 1]</span>
-                        <span class="bg-emerald-950/80 text-accent text-xs font-mono px-3 py-1 rounded-md border border-emerald-800/40">Ollama[cite: 1]</span>
-                        <span class="bg-emerald-950/80 text-accent text-xs font-mono px-3 py-1 rounded-md border border-emerald-800/40">Docker[cite: 1]</span>
+                        <span class="bg-sky-950/80 text-accent text-xs font-mono px-3 py-1 rounded-md border border-sky-800/40">Java[cite: 1]</span>
+                        <span class="bg-sky-950/80 text-accent text-xs font-mono px-3 py-1 rounded-md border border-sky-800/40">Spring Boot[cite: 1]</span>
+                        <span class="bg-sky-950/80 text-accent text-xs font-mono px-3 py-1 rounded-md border border-sky-800/40">PostgreSQL + pgvector[cite: 1]</span>
+                        <span class="bg-sky-950/80 text-accent text-xs font-mono px-3 py-1 rounded-md border border-sky-800/40">Ollama[cite: 1]</span>
+                        <span class="bg-sky-950/80 text-accent text-xs font-mono px-3 py-1 rounded-md border border-sky-800/40">Docker[cite: 1]</span>
                     </div>
                 </div>
 
@@ -285,7 +287,7 @@
                 <div data-category="backend" data-tilt data-tilt-max="3" data-tilt-speed="400" class="project-card bg-gradient-to-br from-slate-900/90 to-slate-900/50 backdrop-blur-md p-8 rounded-2xl border border-slate-800 hover:border-secondary/50 shadow-xl transition duration-300 group">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-secondary">
+                            <div class="w-10 h-10 rounded-lg bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary">
                                 <i class="fas fa-wallet"></i>
                             </div>
                             <h3 class="text-xl md:text-2xl font-bold text-white group-hover:text-secondary transition">Expense Tracker API</h3>
@@ -295,13 +297,13 @@
                         </a>
                     </div>
                     <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
-                        Built a full-stack personal finance application managing real-time transactional data, balance calculations, and expense categorization[cite: 1]. Designed normalized relational schemas in MySQL and used Spring Data JPA to write optimized query routines for low latency[cite: 1]. Implemented structured REST endpoints with custom DTOs, global exception handling, and input validation[cite: 1].
+                        Full-stack personal finance application managing real-time transactional data, balance calculations, and expense categorization[cite: 1]. Designed normalized relational schemas in MySQL and used Spring Data JPA to write optimized query routines for low latency[cite: 1]. Implemented structured REST endpoints with custom DTOs, global exception handling, and input validation[cite: 1].
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-sky-950/80 text-secondary text-xs font-mono px-3 py-1 rounded-md border border-sky-800/40">Java[cite: 1]</span>
-                        <span class="bg-sky-950/80 text-secondary text-xs font-mono px-3 py-1 rounded-md border border-sky-800/40">Spring Boot[cite: 1]</span>
-                        <span class="bg-sky-950/80 text-secondary text-xs font-mono px-3 py-1 rounded-md border border-sky-800/40">MySQL[cite: 1]</span>
-                        <span class="bg-sky-950/80 text-secondary text-xs font-mono px-3 py-1 rounded-md border border-sky-800/40">Spring Data JPA[cite: 1]</span>
+                        <span class="bg-indigo-950/80 text-secondary text-xs font-mono px-3 py-1 rounded-md border border-indigo-800/40">Java[cite: 1]</span>
+                        <span class="bg-indigo-950/80 text-secondary text-xs font-mono px-3 py-1 rounded-md border border-indigo-800/40">Spring Boot[cite: 1]</span>
+                        <span class="bg-indigo-950/80 text-secondary text-xs font-mono px-3 py-1 rounded-md border border-indigo-800/40">MySQL[cite: 1]</span>
+                        <span class="bg-indigo-950/80 text-secondary text-xs font-mono px-3 py-1 rounded-md border border-indigo-800/40">Spring Data JPA[cite: 1]</span>
                     </div>
                 </div>
 
@@ -309,29 +311,29 @@
                 <div data-category="frontend" data-tilt data-tilt-max="3" data-tilt-speed="400" class="project-card bg-gradient-to-br from-slate-900/90 to-slate-900/50 backdrop-blur-md p-8 rounded-2xl border border-slate-800 hover:border-emerald-500/50 shadow-xl transition duration-300 group">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-accent">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emeraldaccent">
                                 <i class="fas fa-utensils"></i>
                             </div>
-                            <h3 class="text-xl md:text-2xl font-bold text-white group-hover:text-accent transition">Meal Finder App</h3>
+                            <h3 class="text-xl md:text-2xl font-bold text-white group-hover:text-emeraldaccent transition">Meal Finder App</h3>
                         </div>
-                        <a href="https://github.com/hii-dims" target="_blank" class="text-slate-400 hover:text-accent transition text-sm font-mono flex items-center gap-2">
+                        <a href="https://github.com/hii-dims" target="_blank" class="text-slate-400 hover:text-emeraldaccent transition text-sm font-mono flex items-center gap-2">
                             <span>Source Code</span> <i class="fas fa-external-link-alt"></i>
                         </a>
                     </div>
                     <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
-                        Created a responsive web app using asynchronous Fetch API calls to integrate external endpoints from TheMealDB[cite: 1]. Dynamic DOM manipulation handles search filtering, error edge cases, and real-time recipe rendering seamlessly[cite: 1].
+                        Responsive web application leveraging asynchronous Fetch API calls to integrate external endpoints from TheMealDB[cite: 1]. Built with dynamic DOM manipulation for seamless search filtering, error edge cases, and real-time recipe rendering[cite: 1].
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-emerald-950/80 text-accent text-xs font-mono px-3 py-1 rounded-md border border-emerald-800/40">JavaScript[cite: 1]</span>
-                        <span class="bg-emerald-950/80 text-accent text-xs font-mono px-3 py-1 rounded-md border border-emerald-800/40">HTML5/CSS3[cite: 1]</span>
-                        <span class="bg-emerald-950/80 text-accent text-xs font-mono px-3 py-1 rounded-md border border-emerald-800/40">REST API[cite: 1]</span>
+                        <span class="bg-emerald-950/80 text-emeraldaccent text-xs font-mono px-3 py-1 rounded-md border border-emerald-800/40">JavaScript[cite: 1]</span>
+                        <span class="bg-emerald-950/80 text-emeraldaccent text-xs font-mono px-3 py-1 rounded-md border border-emerald-800/40">HTML5/CSS3[cite: 1]</span>
+                        <span class="bg-emerald-950/80 text-emeraldaccent text-xs font-mono px-3 py-1 rounded-md border border-emerald-800/40">REST API[cite: 1]</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
+    <!-- Education Timeline Section -->
     <section id="education" class="py-24 px-6 reveal">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-2xl md:text-3xl font-bold mb-12 flex items-center gap-3">
@@ -343,7 +345,7 @@
                     <div class="bg-cardbg/70 backdrop-blur-md p-6 rounded-2xl border border-slate-800 hover:border-accent/40 transition">
                         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2 gap-1">
                             <h3 class="font-bold text-lg text-white">Bengal College of Engineering & Technology (BCET)[cite: 1]</h3>
-                            <span class="text-accent font-mono text-xs bg-emerald-950 px-2.5 py-1 rounded-md w-fit">2023 – 2027 (Expected)[cite: 1]</span>
+                            <span class="text-accent font-mono text-xs bg-sky-950 px-2.5 py-1 rounded-md w-fit">2023 – 2027 (Expected)[cite: 1]</span>
                         </div>
                         <p class="text-slate-300 text-sm">Bachelor of Technology in Computer Science & Engineering[cite: 1]</p>
                     </div>
@@ -377,14 +379,14 @@
     <!-- Contact Section -->
     <section id="contact" class="py-24 px-6 reveal">
         <div class="max-w-3xl mx-auto text-center bg-gradient-to-b from-slate-900/90 to-slate-900/40 backdrop-blur-xl p-10 md:p-14 rounded-3xl border border-slate-800 shadow-2xl">
-            <span class="text-accent font-mono text-sm uppercase tracking-widest">What's Next?</span>
+            <span class="text-accent font-mono text-sm uppercase tracking-widest">Get In Touch</span>
             <h2 class="text-3xl md:text-4xl font-extrabold mt-2 mb-4">Let's Build Something Great</h2>
             <p class="text-slate-400 max-w-xl mx-auto mb-8 leading-relaxed">
-                I'm actively looking for Software Development, Java Backend, or AI Engineering internship roles. Whether you have an opportunity or just want to talk tech, my inbox is open!
+                I'm actively looking for Software Development, Java Backend, or AI Engineering internship opportunities. Let's connect!
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="mailto:smriti.ranjan164@gmail.com" class="bg-gradient-to-r from-accent to-emerald-600 text-darkbg font-bold px-7 py-3.5 rounded-xl hover:opacity-90 transition shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2">
-                    <i class="fas fa-paper-plane"></i> Say Hello
+                <a href="mailto:smriti.ranjan164@gmail.com" class="bg-accent text-darkbg font-bold px-7 py-3.5 rounded-xl hover:bg-sky-400 transition shadow-lg shadow-sky-500/20 flex items-center justify-center gap-2">
+                    <i class="fas fa-envelope"></i> smriti.ranjan164@gmail.com[cite: 1]
                 </a>
                 <a href="https://github.com/hii-dims" target="_blank" class="bg-slate-800/80 border border-slate-700 text-slate-200 font-semibold px-7 py-3.5 rounded-xl hover:border-accent transition flex items-center justify-center gap-2">
                     <i class="fab fa-github"></i> github.com/hii-dims[cite: 1]
@@ -393,7 +395,7 @@
         </div>
     </section>
 
-    <!-- Toast -->
+    <!-- Toast Notification -->
     <div id="toast" class="fixed bottom-6 right-6 bg-accent text-darkbg font-bold px-5 py-3 rounded-xl shadow-2xl transform translate-y-20 opacity-0 transition-all duration-300 z-50 flex items-center gap-2">
         <i class="fas fa-check-circle"></i> Email copied to clipboard!
     </div>
@@ -403,7 +405,7 @@
         <p>Designed & Built by Smriti Ranjan • 2026[cite: 1]</p>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- JavaScript Interactions -->
     <script>
         const spotlight = document.getElementById('spotlight');
         window.addEventListener('mousemove', (e) => {
