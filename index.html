@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smriti Ranjan | Backend & Java Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0f172a',
+                        cardbg: '#1e293b',
+                        accent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkbg text-slate-100 font-sans antialiased selection:bg-accent selection:text-darkbg">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full bg-darkbg/85 backdrop-blur-md border-b border-slate-800 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-accent tracking-wider">SR<span class="text-white">.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#skills" class="hover:text-accent transition">Skills</a>
+                <a href="#projects" class="hover:text-accent transition">Projects</a>
+                <a href="#education" class="hover:text-accent transition">Education</a>
+                <a href="#contact" class="hover:text-accent transition">Contact</a>
+            </div>
+            <a href="mailto:smriti.ranjan164@gmail.com" class="bg-accent text-darkbg px-4 py-2 rounded-lg text-sm font-semibold hover:bg-sky-400 transition shadow-lg shadow-sky-500/20">Let's Connect</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="max-w-3xl text-center">
+            <span class="inline-block bg-sky-950 text-accent text-xs font-semibold px-3 py-1 rounded-full border border-sky-800/50 mb-6 tracking-wide uppercase">Final Year CSE Student & Backend Engineer</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-indigo-400">Smriti Ranjan</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-8 leading-relaxed">
+                Building production-grade backend applications, robust REST APIs, and intelligent RAG systems with Java and Spring Boot.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="bg-accent text-darkbg font-semibold px-6 py-3 rounded-xl hover:bg-sky-400 transition shadow-lg shadow-sky-500/20">Explore Projects</a>
+                <a href="https://github.com/hii-dims" target="_blank" class="bg-cardbg border border-slate-700 text-slate-200 font-semibold px-6 py-3 rounded-xl hover:border-accent transition flex items-center justify-center gap-2">
+                    <i class="fab fa-github"></i> GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-slate-900/40">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 flex items-center gap-3">
+                <span class="text-accent">01.</span> About Me
+            </h2>
+            <div class="bg-cardbg p-8 rounded-2xl border border-slate-800 shadow-xl leading-relaxed text-slate-300 space-y-4">
+                <p>
+                    I am a final-year Computer Science and Engineering student at Bengal College of Engineering and Technology (BCET), graduating in 2027. My core focus lies in developing high-performance backend systems, microservices, and modern AI-powered query engines.
+                </p>
+                <p>
+                    With deep proficiency in Java, Spring Boot, and relational databases like PostgreSQL and MySQL, I enjoy solving complex architectural challenges, optimizing query performance, and building clean, production-grade software solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-12 flex items-center gap-3">
+                <span class="text-accent">02.</span> Technical Expertise
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-cardbg p-6 rounded-2xl border border-slate-800">
+                    <h3 class="text-accent font-semibold text-lg mb-3"><i class="fas fa-code mr-2"></i>Languages & Core</h3>
+                    <p class="text-sm text-slate-400">Java, JavaScript, SQL, Data Structures & Algorithms, OOP, System Design, DBMS, Operating Systems</p>
+                </div>
+                <div class="bg-cardbg p-6 rounded-2xl border border-slate-800">
+                    <h3 class="text-accent font-semibold text-lg mb-3"><i class="fas fa-server mr-2"></i>Backend & APIs</h3>
+                    <p class="text-sm text-slate-400">Spring Boot, Spring Web MVC, RESTful APIs, Spring Security, Hibernate/JPA, Maven</p>
+                </div>
+                <div class="bg-cardbg p-6 rounded-2xl border border-slate-800">
+                    <h3 class="text-accent font-semibold text-lg mb-3"><i class="fas fa-brain mr-2"></i>AI & Vector Search</h3>
+                    <p class="text-sm text-slate-400">RAG Systems, PostgreSQL with pgvector, Ollama, Embeddings, Apache PDFBox</p>
+                </div>
+                <div class="bg-cardbg p-6 rounded-2xl border border-slate-800">
+                    <h3 class="text-accent font-semibold text-lg mb-3"><i class="fas fa-database mr-2"></i>Databases & Storage</h3>
+                    <p class="text-sm text-slate-400">PostgreSQL, MySQL, H2 Database, Browser LocalStorage</p>
+                </div>
+                <div class="bg-cardbg p-6 rounded-2xl border border-slate-800">
+                    <h3 class="text-accent font-semibold text-lg mb-3"><i class="fas fa-globe mr-2"></i>Web & Frontend</h3>
+                    <p class="text-sm text-slate-400">HTML5, CSS3, JavaScript DOM Manipulation, Fetch API, Responsive Design</p>
+                </div>
+                <div class="bg-cardbg p-6 rounded-2xl border border-slate-800">
+                    <h3 class="text-accent font-semibold text-lg mb-3"><i class="fas fa-tools mr-2"></i>Tools & DevOps</h3>
+                    <p class="text-sm text-slate-400">Git, GitHub, Docker, Docker Compose, VS Code, Swagger/OpenAPI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 bg-slate-900/40">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-12 flex items-center gap-3">
+                <span class="text-accent">03.</span> Featured Projects
+            </h2>
+            <div class="space-y-8">
+                <div class="bg-cardbg p-8 rounded-2xl border border-slate-800 shadow-xl space-y-4">
+                    <h3 class="text-xl font-bold text-white">Campus Query AI Engine</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Intelligent campus query engine built with Java & Spring Boot that ingests university PDFs using Apache PDFBox. Integrates PostgreSQL with pgvector and Ollama (Qwen 3) to execute semantic similarity searches and generate context-grounded answers. Secured with Spring Security, JWT auth, and documented via Swagger/OpenAPI.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="bg-sky-950 text-accent text-xs px-3 py-1 rounded-md border border-sky-800/40">Java</span>
+                        <span class="bg-sky-950 text-accent text-xs px-3 py-1 rounded-md border border-sky-800/40">Spring Boot</span>
+                        <span class="bg-sky-950 text-accent text-xs px-3 py-1 rounded-md border border-sky-800/40">PostgreSQL & pgvector</span>
+                        <span class="bg-sky-950 text-accent text-xs px-3 py-1 rounded-md border border-sky-800/40">Ollama</span>
+                        <span class="bg-sky-950 text-accent text-xs px-3 py-1 rounded-md border border-sky-800/40">Docker</span>
+                    </div>
+                </div>
+
+                <div class="bg-cardbg p-8 rounded-2xl border border-slate-800 shadow-xl space-y-4">
+                    <h3 class="text-xl font-bold text-white">Expense Tracker API</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Full-stack personal finance application managing real-time transactional data, balance calculations, and expense categorization. Designed normalized relational schemas in MySQL with optimized query routines via Spring Data JPA. Includes structured REST endpoints with custom DTOs and global exception handling.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="bg-sky-950 text-accent text-xs px-3 py-1 rounded-md border border-sky-800/40">Java</span>
+                        <span class="bg-sky-950 text-accent text-xs px-3 py-1 rounded-md border border-sky-800/40">Spring Boot</span>
+                        <span class="bg-sky-950 text-accent text-xs px-3 py-1 rounded-md border border-sky-800/40">MySQL</span>
+                        <span class="bg-sky-950 text-accent text-xs px-3 py-1 rounded-md border border-sky-800/40">Spring Data JPA</span>
+                    </div>
+                </div>
+
+                <div class="bg-cardbg p-8 rounded-2xl border border-slate-800 shadow-xl space-y-4">
+                    <h3 class="text-xl font-bold text-white">Meal Finder App</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Responsive web application leveraging asynchronous Fetch API calls to integrate external endpoints from TheMealDB. Built with dynamic DOM manipulation for seamless search filtering, error handling, and real-time recipe rendering.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="bg-sky-950 text-accent text-xs px-3 py-1 rounded-md border border-sky-800/40">JavaScript</span>
+                        <span class="bg-sky-950 text-accent text-xs px-3 py-1 rounded-md border border-sky-800/40">HTML5/CSS3</span>
+                        <span class="bg-sky-950 text-accent text-xs px-3 py-1 rounded-md border border-sky-800/40">REST API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-12 flex items-center gap-3">
+                <span class="text-accent">04.</span> Education
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-cardbg p-6 rounded-2xl border border-slate-800">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-bold text-lg text-white">Bengal College of Engineering & Technology (BCET)</h3>
+                        <span class="text-accent text-sm">2023 – 2027 (Expected)</span>
+                    </div>
+                    <p class="text-slate-300 text-sm">Bachelor of Technology in Computer Science & Engineering</p>
+                </div>
+                <div class="bg-cardbg p-6 rounded-2xl border border-slate-800">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-bold text-lg text-white">Himalayan Public School</h3>
+                        <span class="text-accent text-sm">2023</span>
+                    </div>
+                    <p class="text-slate-300 text-sm">Senior Secondary (Class XII)</p>
+                </div>
+                <div class="bg-cardbg p-6 rounded-2xl border border-slate-800">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-bold text-lg text-white">Don Bosco Academy</h3>
+                        <span class="text-accent text-sm">2021</span>
+                    </div>
+                    <p class="text-slate-300 text-sm">Secondary (Class X)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 bg-slate-900/40">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Get In Touch</h2>
+            <p class="text-slate-400 mb-8">
+                I'm actively looking for software development, Java backend, or full-stack engineering internship opportunities. Let's connect!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="mailto:smriti.ranjan164@gmail.com" class="bg-accent text-darkbg font-semibold px-6 py-3 rounded-xl hover:bg-sky-400 transition shadow-lg shadow-sky-500/20 flex items-center justify-center gap-2">
+                    <i class="fas fa-envelope"></i> smriti.ranjan164@gmail.com
+                </a>
+                <a href="https://github.com/hii-dims" target="_blank" class="bg-cardbg border border-slate-700 text-slate-200 font-semibold px-6 py-3 rounded-xl hover:border-accent transition flex items-center justify-center gap-2">
+                    <i class="fab fa-github"></i> github.com/hii-dims
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center border-t border-slate-800 text-slate-500 text-sm">
+        <p>© 2026 Smriti Ranjan. Built with passion & precision.</p>
+    </footer>
+
+</body>
+</html>
